@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+display:grid;
+grid-template-columns: 250px 1fr;
+min-height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(59, 149, 209);
+}
+
+.sidebar li
+{
+    display: grid;               /* use grid, not flex */
+    grid-template-columns: 24px 1fr; /* icon + text */
+    align-items: center;         /* vertical alignment */
+    gap: 10px;                   /* spacing between icon and text */
+    padding: 8px 0;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #fff;
+    display: contents; /* optional, lets the li grid control layout */
+}
+
+.material-icons {
+    font-size: 20px;
+}
+.sidebar .logo {
+    display: grid;                /* grid container */
+    grid-template-columns: 24px 1fr; /* icon + text */
+    align-items: center;          /* vertical alignment */
+    gap: 10px;                    /* space between icon and text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 16px;
+    color: #fff;                  /* adjust to sidebar color */
+}
+
+.main {
+    display:grid;
+}
+
