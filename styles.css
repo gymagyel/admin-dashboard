@@ -1,7 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+      font-family: Arial, Helvetica, sans-serif
+
 }
+
 .container{
 display:grid;
 grid-template-columns: 250px 1fr;
@@ -14,11 +17,12 @@ min-height: 100vh;
 
 .sidebar li
 {
-    display: grid;               /* use grid, not flex */
-    grid-template-columns: 24px 1fr; /* icon + text */
-    align-items: center;         /* vertical alignment */
-    gap: 10px;                   /* spacing between icon and text */
+    display: grid;               
+    grid-template-columns: 24px 1fr; 
+    align-items: center;         
+    gap: 10px;               
     padding: 8px 0;
+   
 }
 
 .sidebar li a {
@@ -57,9 +61,10 @@ min-height: 100vh;
 /* top row */
 .header-top {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr auto;
     
     align-items: center;
+  
     
 
 }
@@ -71,7 +76,8 @@ min-height: 100vh;
     gap: 16px;
 }
 .search input {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 8px 16px;
     border: none;
     border-radius: 20px;
@@ -83,11 +89,17 @@ min-height: 100vh;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    gap: 8px;
+  gap: 30px;
+   margin-right: 20px;
+   
 }
 .user-info .material-icons {
     font-size: 24px;
     color: #555;
+
+}
+.user-info p {
+    margin: 0;
 }
 /* bottom row */
 .header-bottom {
@@ -105,30 +117,53 @@ min-height: 100vh;
     align-items: center;
 }
 
-.name {
-    margin: 0;
+.username , .hi , .name{
     font-weight: bold;
-    font-size: 24px;
     color: black;
+}
+
+.hi{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.username {
+    font-size: 18px;
+}
+.name {
+   
+    margin: 0px;
+    font-size: 20px;
+
     
 }
 .user-info img{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-
+   
+    display: block;
+}
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: block;
 }
  .welcome img {
-    width: 48px;
-    height: 48px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
 }
 
 /* buttons */
 .actions {
     display: grid;
+ 
     grid-auto-flow: column;
-    gap: 12px;
+    gap: 25px;
+    margin-right: 20px;
+    margin-top: 5px;
+  
 }
 
 .actions button {
@@ -136,7 +171,7 @@ min-height: 100vh;
     color: white;
     border: none;
     border-radius: 20px;
-    padding: 8px 16px;
+    padding: 8px 24px;
     font-weight: 600;
     cursor: pointer;
 }
