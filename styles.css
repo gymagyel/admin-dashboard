@@ -252,10 +252,34 @@ min-height: 100vh;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: grid;
+    padding-top: 10px;
+   margin-bottom: 20px;
+   
 }
 .announcments p {
     font-size: 11px;
+  
+   
 }
+ 
 .announcments {
-
+    border-radius: 8px;
+    padding: 0px 20px;
 }
+ 
+
+.trending {
+        background-color: #fff;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: grid;
+    padding-top: 20px;
+}
+
+.trends{
+display: grid;
+grid-template-columns: auto 1fr ;
+padding-left: 20px;
+}
+
