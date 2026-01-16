@@ -175,3 +175,87 @@ min-height: 100vh;
     font-weight: 600;
     cursor: pointer;
 }
+ 
+.main-content {
+    background-color: rgb(216, 222, 225);
+    display: grid;
+    grid-template-columns: 2fr 250px;
+
+    border-top-style: outset;
+    border-color: #d1d2d4;
+    border-top-width: 3px;
+    
+
+  
+    gap: 20px;
+    padding: 20px;
+    
+  
+}
+
+
+.projects {
+    display: grid; 
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+}
+.main-title {
+    font-weight: 550;
+    padding-bottom: 20px ;
+    color: #191818;
+}
+
+
+
+.card {
+    background-color: #fff;
+    color: #555;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    
+    
+
+   border-radius: 8px;
+   border-left-style: outset;
+   border-left-width: 7px;
+   border-color: rgb(239, 161, 37);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.p , p {
+   
+   padding-left: 15px;
+   font-size: 12px;
+   
+
+}
+
+.actions {
+  
+
+   justify-content: right;
+  
+   
+}
+
+
+.title { 
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    
+}
+
+.announcment {
+    background-color: #fff;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: grid;
+}
+.announcments p {
+    font-size: 11px;
+}
+.announcments {
+
+}
